@@ -1,0 +1,191 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;      
+    height: 100vh;      
+    background-color: white;    
+    font-family: "Ubuntu", sans-serif;      
+}
+
+header {
+    background-color: white;
+    border-bottom: 5px solid transparent; 
+    border-image: repeating-linear-gradient(
+        to right,
+        #ffba08 0%,        
+        #ffba08 11.1%,     
+        #faa307 11.1%,    
+        #faa307 22.2%, 
+        #f48c06 22.2%,    
+        #f48c06 33.3%,    
+        #e85d04 33.3%,   
+        #e85d04 44.4%,
+        #dc2f02 44.4%,   
+        #dc2f02 55.5%,     
+        #d00000 55.5%,    
+        #d00000 66.6%,     
+        #9d0208 66.6%,  
+        #9d0208 77.7%,   
+        #6a040f 77.7%,     
+        #6a040f 88.8%,   
+        #370617 88.8%,    
+        #370617 100%     
+    );
+    border-image-slice: 1;
+    font-family: "Parkinsans", sans-serif;
+    padding: 1rem 2rem;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.header-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header-links a {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #03071E;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 400;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+footer ul li {
+    font-size: 14px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-section {
+    display: inline-block;
+    margin: 0 2rem;
+    padding: 1rem;
+    vertical-align: top;
+}
+
+footer .footer-section h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+aside div {
+    text-align: center; 
+}
+
+aside img {
+    width: 100%; 
+    max-width: 150px; 
+    height: auto;
+    border-radius: 8px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 15% auto 15%; 
+    gap: 1rem; 
+    padding: 1rem;
+    font-family: "Parkinsans", sans-serif;
+}
+
+.left-aside, .right-aside {
+    padding: 1rem;
+    font-family: "Parkinsans", sans-serif;
+}
+
+.content {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    padding: 1rem;
+    border-radius: 50%; /* Ensure the border stays circular */
+    border-width: 10px;
+    border-style: solid;
+    border-image: linear-gradient(
+        to bottom, 
+        #FFBA08 0%, 
+        #FFBA08 10%, 
+        #FAA307 10%, 
+        #FAA307 20%, 
+        #F48C06 20%, 
+        #F48C06 30%, 
+        #E85D04 30%, 
+        #E85D04 40%, 
+        #DC2F02 40%, 
+        #DC2F02 50%, 
+        #D00000 50%, 
+        #D00000 60%, 
+        #9D0208 60%, 
+        #9D0208 70%, 
+        #6A040F 70%, 
+        #6A040F 80%, 
+        #370617 80%, 
+        #370617 90%, 
+        #03071E 90%, 
+        #03071E 100%
+    ) 1;
+    color: black;
+    background-color: white; /* Ensure the inner circle is visible */
+    box-sizing: border-box; /* Ensure the border and padding are calculated properly */
+}
+
+
+
+main section div {
+    display: flex;
+    padding: 3%;
+    gap: 7%;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; 
+    }
+}
