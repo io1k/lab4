@@ -1,0 +1,120 @@
+.constructor-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0; 
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    border: 2px solid ; 
+    border-radius: 50px; 
+    padding: 20px; 
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(
+        to bottom, 
+        #FFBA08 0%, 
+        #FFBA08 10%, 
+        #FAA307 10%, 
+        #FAA307 20%, 
+        #F48C06 20%, 
+        #F48C06 30%, 
+        #E85D04 30%, 
+        #E85D04 40%, 
+        #DC2F02 40%, 
+        #DC2F02 50%, 
+        #D00000 50%, 
+        #D00000 60%, 
+        #9D0208 60%, 
+        #9D0208 70%, 
+        #6A040F 70%, 
+        #6A040F 80%, 
+        #370617 80%, 
+        #370617 90%, 
+        #03071E 90%, 
+        #03071E 100%
+    ) 1;
+}
+
+.constructor-section {
+    padding: 20px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.constructor-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.autocomplete-box {
+    width: 500px;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+.image-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-box img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid ;
+    border-radius: 2px; 
+    
+}
+.constructor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.image-section {
+    width: 48%;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.image-frame {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border: 5px solid #333;
+    border-radius: 15px;
+}
+
+#image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Канвас не мешает взаимодействию с изображением */
+}
+
+.constructor-section {
+    width: 48%;
+}
+
+.button-container {
+    margin-top: 10px;
+}
